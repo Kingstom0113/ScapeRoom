@@ -141,3 +141,39 @@ body {
     /* Ancho máximo para grandes pantallas */
     z-index: 2;
 }
+
+.highlighted-rectangle {
+    display: block;
+    border: 2px solid rgba(0, 0, 0, 0);
+    /* Amarillo claro con algo de transparencia */
+    border-radius: 5px;
+    /* Bordes ligeramente redondeados */
+    width: 355px;
+    /* Ancho inicial, ajustable */
+    height: 800px;
+    /* Altura inicial, ajustable */
+    margin: 50px auto;
+    /* Aumenta el margen superior e inferior para bajarlos más y separarlos */
+    transition: all 0.3s ease;
+    /* Transición suave para cambios de estilo */
+    background-color: #ffffff00;
+    /* Fondo transparente */
+}
+
+.highlighted-rectangle:hover {
+    box-shadow: 0 0 150px rgba(255, 235, 145, 0.503);
+    /* Efecto de iluminación al pasar el mouse */
+}
+
+.image-container {
+    display: inline-block;
+    /* Ajuste para que los cuadrados estén en línea */
+    text-align: center;
+    margin: 0 -130px;
+    /* Aumenta la separación entre los cuadrados */
+}
+
+.images-container {
+    padding-top: 250px;
+    /* Aumenta el espacio superior para bajar los cuadrados aún más si es necesario */
+}
