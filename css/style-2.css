@@ -86,7 +86,7 @@ body {
     align-items: center;
     flex-direction: column;
     height: 100vh;
-  
+
     background-size: cover;
     background-position: center;
 }
@@ -120,4 +120,24 @@ body {
     /* Imágenes más grandes */
     height: auto;
     /* Mantiene la proporción de las imágenes */
+}
+
+.overlay-text-container {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Fondo oscuro con opacidad */
+    padding: 20px;
+    /* Espacio interior para separar el texto de los bordes */
+    border-radius: 10px;
+    /* Bordes redondeados para un aspecto más suave */
+    width: 80%;
+    /* Ajusta el ancho del contenedor de texto según necesites */
+    max-width: 700px;
+    /* Ancho máximo para grandes pantallas */
+    z-index: 2;
 }
