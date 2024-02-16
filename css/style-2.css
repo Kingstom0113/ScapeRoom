@@ -2,6 +2,8 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
+    max-width: 100%;
+    overflow-x: hidden;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -76,4 +78,46 @@ body {
     max-width: 100%;
     /* Asegura que la imagen no exceda el contenedor */
     max-height: 100%;
+}
+
+.background-full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+  
+    background-size: cover;
+    background-position: center;
+}
+
+.images-container {
+    width: 100%;
+    max-width: 1200px;
+    /* Ajustado para permitir imágenes más grandes */
+    display: flex;
+    justify-content: space-between;
+    /* Maximiza la separación entre imágenes */
+    align-items: center;
+    margin-top: 50px;
+    /* Controla qué tan abajo aparecen las imágenes */
+}
+
+.image-container {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: -45px;
+    /* Aumentado para más separación entre imágenes */
+}
+
+.image-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.image-container img {
+    width: 330px;
+    /* Imágenes más grandes */
+    height: auto;
+    /* Mantiene la proporción de las imágenes */
 }
